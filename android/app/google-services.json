@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "73404399832",
+    "project_id": "tankmonitor-f00b2",
+    "storage_bucket": "tankmonitor-f00b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:73404399832:android:6daf8c809cebe0dc2117ad",
+        "android_client_info": {
+          "package_name": "com.example.tank_monitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "73404399832-tv5392iks21g35kfmspjc92ih92gvr79.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tank_monitor",
+            "certificate_hash": "8683785c1bcbd49dcf876ef3b91ff596743aa176"
+          }
+        },
+        {
+          "client_id": "73404399832-broghno4brp9trfddb4mfibb0qm9ak42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEETpIXxfRT6WRLCzqS-bWPQHIHJ6cp4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "73404399832-broghno4brp9trfddb4mfibb0qm9ak42.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
