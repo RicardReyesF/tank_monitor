@@ -79,7 +79,7 @@ class _RadialPaint extends CustomPainter{
 
       canvas.drawCircle(center, radius, paint);
 
-
+      print("el porcentaje es " + "${porcentaje.toString()}");
       ///relleno del arco
       double angleArc= 2 * pi * (porcentaje / 100);
 

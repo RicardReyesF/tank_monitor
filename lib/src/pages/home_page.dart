@@ -11,10 +11,10 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
-final double status=0.0;
+  double status1=0.0;
   @override
   void initState() {
-    readData(); 
+     
     super.initState();
     
   }
@@ -30,24 +30,21 @@ final double status=0.0;
 
   @override
   Widget build(BuildContext context) {
-    
+    readData();
     return Scaffold(
       body: Center(
-        child: RadialPage(porcentaje: status,),
+        child: RadialPage(porcentaje: status1,),
       ),
     );
   }
 
   Future<void> readData() async {
-    databaseReference.child('Buscando').once().then((DataSnapshot snapshot) {
-      String status = snapshot.value['001']['status'];
-      print(status);
-      if (status=="ocupado") {
-          setState(() {
-            
-          }); 
-        }
-      print(snapshot.value);
+    databaseReference.child('Distancia').once().then((DataSnapshot snapshot) {
+      double status = snapshot.value['001']['distancia'];
+      print(status.toString());
+      setState(() {
+        status1 = status;
+      });
     });
   }
 }
