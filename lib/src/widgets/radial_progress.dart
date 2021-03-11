@@ -81,7 +81,7 @@ class _RadialPaint extends CustomPainter{
 
       print("el porcentaje es " + "${porcentaje.toString()}");
       ///relleno del arco
-      double angleArc= 2 * pi * (porcentaje / 100);
+      double angleArc= 2 * pi * (porcentaje / 180);
 
       final paintArc        = new Paint();
       paintArc.color        = Colors.orange;
