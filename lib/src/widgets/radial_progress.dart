@@ -34,7 +34,6 @@ class _RadialPageState extends State<RadialPage> with SingleTickerProviderStateM
   }
   @override
   Widget build(BuildContext context) {
-
     controller.forward(from: 0.0);
     final difereciaAnimar= widget.porcentaje -porcentajeAnterior;
     porcentajeAnterior= widget.porcentaje;
@@ -48,7 +47,10 @@ class _RadialPageState extends State<RadialPage> with SingleTickerProviderStateM
       width: double.infinity,
       child: CustomPaint(
       painter: _RadialPaint((widget.porcentaje-difereciaAnimar) + (difereciaAnimar * controller.value)),
-
+      child: Center(
+        
+        child: Text((((widget.porcentaje)/180)*100).round().toString() + "%",style: TextStyle(color: Colors.orange,fontSize: 75.0),),
+      )
       )
     );
   }
