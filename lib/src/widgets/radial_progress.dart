@@ -49,7 +49,7 @@ class _RadialPageState extends State<RadialPage> with SingleTickerProviderStateM
       painter: _RadialPaint((widget.porcentaje-difereciaAnimar) + (difereciaAnimar * controller.value)),
       child: Center(
         
-        child: Text((((widget.porcentaje)/180)*100).round().toString() + "%",style: TextStyle(color: Colors.orange,fontSize: 75.0),),
+        child: Text(((widget.porcentaje)/180).round().toString() + "%",style: TextStyle(color: Colors.orange,fontSize: 75.0),),
       )
       )
     );
@@ -81,7 +81,6 @@ class _RadialPaint extends CustomPainter{
 
       canvas.drawCircle(center, radius, paint);
 
-      print("el porcentaje es " + "${porcentaje.toString()}");
       ///relleno del arco
       double angleArc= 2 * pi * (porcentaje / 180);
 
