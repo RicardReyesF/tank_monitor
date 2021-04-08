@@ -29,13 +29,13 @@ class _HeaderC extends CustomPainter{
   @override
   void paint(Canvas canvas, Size size) {
       final lapiz = new Paint();
-      lapiz.color = Color(0xffffffff);
+      lapiz.color = Color.fromRGBO(255, 255, 255, 0.7);
       lapiz.strokeWidth = 2;
       lapiz.style = PaintingStyle.fill;
 
       final linea = new Path();
-      linea.lineTo(0,size.height * 0.40);
-      linea.quadraticBezierTo(size.width, size.height * 0.4, size.width,size.height * 0.35);
+      linea.lineTo(0,size.height * 0.95);
+      linea.quadraticBezierTo(size.width, size.height * 0.95, size.width,size.height * 0.80);
       //linea.quadraticBezierTo(size.width * 0.66, size.height * 0.15, size.width,size.height * 0.25);
       linea.lineTo(size.width, 0);
       
