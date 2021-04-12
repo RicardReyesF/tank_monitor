@@ -29,7 +29,6 @@ class _HomePageState extends State<HomePage> {
                 ),
                 SizedBox(height: 25.0),
                 ButtonWidget()
-                
               ],
             ),
           )
