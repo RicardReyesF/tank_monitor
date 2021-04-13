@@ -17,18 +17,10 @@ class ButtonWidget extends StatelessWidget {
         ),
         TableRow(
           children: [
-            _crearBotones(context,'Contenedor 3','assets/contenedor.png',''),
-            _crearBotones(context,'Contenedor 4','assets/contenedor.png',''),
-          ],
-        ),
-        
-        TableRow(
-          children: [
             _crearBotones(context,'Caldera 1','assets/caldera.png','C1T'),
-            _crearBotones(context,'Caldera 2','assets/caldera.png',''),
+            _crearBotones(context,'Foco','assets/foco.png','FC'),
           ],
-        ),
-        
+        ),  
       ],
 
     );

@@ -2,7 +2,7 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:tank_monitor/src/widgets/fondo_widget.dart';
 import 'package:tank_monitor/src/widgets/header_widget.dart';
-import 'package:tank_monitor/src/widgets/radial_progress.dart';
+import 'package:tank_monitor/src/widgets/menu_widget.dart';
 import 'package:tank_monitor/src/widgets/radial_progress_T.dart';
 
 class Cl1Page extends StatefulWidget {
@@ -23,26 +23,41 @@ class _Cl1PageState extends State<Cl1Page> {
       body: Stack(
         children: [
           Fondo(),
-          Column(
-            children: [
-              SafeArea(
-                  child: Container(
-                    height: 200.0,
-                    width: double.infinity,
-                    child: HeaderCurve(),
+          SingleChildScrollView(
+            child: Column(
+              children: [
+                SafeArea(
+                    child: Container(
+                      height: 200.0,
+                      width: double.infinity,
+                      child: HeaderCurve(),
+                    ),
                   ),
-                ),
-                SizedBox(height: 100.0,),
-                Container(
-                  width: 350.0,
-                  height: 350.0,
-                  child: RadialPageT(porcentaje: status1),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(40.0),
-                    color: Color.fromRGBO(255, 255, 255, 0.7)
-                  ),
-                )
-            ],
+                  SizedBox(height: 5.0),
+                  Container(
+                      width: 350.0,
+                      height: 75.0,
+                      child: Center(
+                        child: Text("Temperatura",style: TextStyle(color: Colors.orange,fontSize: 25.0),)),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(40.0),
+                        color: Color.fromRGBO(255, 255, 255, 0.7)
+                      ),
+                    ),
+                  SizedBox(height: 10.0,),
+                  MenuWidget(),
+                  SizedBox(height: 30.0),
+                  Container(
+                    width: 350.0,
+                    height: 350.0,
+                    child: RadialPageT(porcentaje: status1),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(40.0),
+                      color: Color.fromRGBO(255, 255, 255, 0.7)
+                    ),
+                  )
+              ],
+            ),
           )
         ],
       ),

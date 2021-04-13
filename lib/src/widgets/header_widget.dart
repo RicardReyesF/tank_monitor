@@ -16,7 +16,7 @@ class _HeaderCurveState extends State<HeaderCurve> {
       child: CustomPaint(
         child: Container(
           padding: EdgeInsets.only(top: 100.0,left: 130.0),
-          child: Text("Monitoreo",style: TextStyle(color: Color.fromRGBO(200, 160, 78, 1.0),fontSize: 35.0 ),)
+          child: Text("Monitoreo",style: TextStyle(color: Colors.orange,fontSize: 35.0 ),)
         ),
         painter: _HeaderC(),
       ),

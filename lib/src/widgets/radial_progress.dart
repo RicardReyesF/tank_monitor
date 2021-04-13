@@ -49,7 +49,7 @@ class _RadialPageState extends State<RadialPage> with SingleTickerProviderStateM
       painter: _RadialPaint((widget.porcentaje-difereciaAnimar) + (difereciaAnimar * controller.value)),
       child: Center(
         
-        child: Text(((widget.porcentaje)/180).round().toString() + "%",style: TextStyle(color: Colors.orange,fontSize: 75.0),),
+        child: Text(((widget.porcentaje)).round().toString() + "%",style: TextStyle(color: Colors.orange,fontSize: 75.0),),
       )
       )
     );
